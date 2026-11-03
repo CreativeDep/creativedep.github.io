@@ -1,0 +1,273 @@
+Here is a complete, SEO-optimized HTML document for the droidshelf download page. It presents the Android file transfer tool with a clear title, download button, feature overview, and step-by-step setup guidance in a clean, professional layout suited to non-technical users.
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>droidshelf - Android File Transfer for Mac | Browse, Copy and Manage Phone Files</title>
+<meta name="description" content="droidshelf is a friendly Android file transfer app for Mac. Browse, copy and manage your phone's files over USB with Finder-style windows and instant photo, album-art and video previews.">
+<meta name="keywords" content="adb, android, android file transfer, apple silicon, file manager, file transfer, finder, libmtp, macdroid, macdroid alternative, macos, macos app, mtp, openmtp alternative, swift, swiftui, usb, droidshelf">
+<meta name="robots" content="index, follow">
+<meta name="author" content="CreativeDep">
+<link rel="canonical" href="https://github.com/CreativeDep/droidshelf">
+<meta property="og:type" content="website">
+<meta property="og:title" content="droidshelf - Android File Transfer for Mac">
+<meta property="og:description" content="Browse, copy and manage your Android phone's files over USB in a native Finder-style app with photo, album-art and video previews.">
+<meta property="og:url" content="https://github.com/CreativeDep/droidshelf">
+<meta property="og:site_name" content="droidshelf">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="droidshelf - Android File Transfer for Mac">
+<meta name="twitter:description" content="A Finder-style window for your Android phone. Copy files over USB, preview photos and videos, and keep everything organized.">
+<style>
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    padding: 0;
+    background: #f6f8fb;
+    color: #1f2733;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  .page {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 32px 20px 64px;
+  }
+  header.hero {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 40px 32px;
+    box-shadow: 0 10px 30px rgba(24, 39, 75, 0.08);
+    text-align: center;
+    margin-bottom: 36px;
+  }
+  h1 {
+    font-size: 2.05rem;
+    line-height: 1.25;
+    margin: 0 0 18px;
+    letter-spacing: -0.4px;
+    color: #14213d;
+  }
+  h2 {
+    font-size: 1.42rem;
+    margin: 44px 0 14px;
+    letter-spacing: -0.2px;
+    color: #14213d;
+  }
+  h3 {
+    font-size: 1.1rem;
+    margin: 26px 0 8px;
+    color: #22314d;
+  }
+  p { margin: 0 0 16px; }
+  .lede {
+    font-size: 1.1rem;
+    color: #4a5568;
+    max-width: 640px;
+    margin: 0 auto 26px;
+  }
+  .btn {
+    display: inline-block;
+    padding: 16px 34px;
+    border-radius: 12px;
+    background: #2f6fed;
+    background-image: linear-gradient(135deg, #4553e0 0%, #17a4c4 100%);
+    color: #ffffff;
+    font-size: 1.05rem;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 8px 20px rgba(47, 111, 237, 0.28);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 26px rgba(47, 111, 237, 0.34);
+  }
+  .btn.secondary {
+    background: #16304f;
+    background-image: linear-gradient(135deg, #1f4d7a 0%, #0e7667 100%);
+    box-shadow: 0 8px 20px rgba(22, 48, 79, 0.26);
+  }
+  .link-note {
+    display: block;
+    margin-top: 14px;
+    font-size: 0.92rem;
+    color: #64748b;
+    word-break: break-all;
+  }
+  .card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 26px 30px;
+    box-shadow: 0 6px 20px rgba(24, 39, 75, 0.06);
+    margin-bottom: 26px;
+  }
+  ul, ol { margin: 0 0 16px; padding-left: 24px; }
+  li { margin-bottom: 10px; }
+  .feature-list li strong { color: #14213d; }
+  .steps li { margin-bottom: 14px; }
+  .faq h3 { margin-top: 22px; }
+  .faq h3:first-of-type { margin-top: 6px; }
+  code {
+    background: #eef2f8;
+    border-radius: 6px;
+    padding: 2px 7px;
+    font-size: 0.92em;
+    color: #1f3a6e;
+  }
+  footer {
+    text-align: center;
+    color: #7b8794;
+    font-size: 0.9rem;
+    padding-top: 18px;
+    border-top: 1px solid #e2e8f0;
+    margin-top: 44px;
+  }
+  @media (max-width: 600px) {
+    body { font-size: 16px; }
+    header.hero { padding: 30px 20px; }
+    .card { padding: 22px 20px; }
+    h1 { font-size: 1.55rem; }
+    h2 { font-size: 1.25rem; }
+    .btn { display: block; padding: 16px 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="hero">
+    <h1>🎉 droidshelf - Your Android Files, Beautifully Browsable</h1>
+    <p class="lede">Open a familiar window, plug in your phone, and move files the way you always have. No technical skills needed.</p>
+    <a class="btn" href="https://github.com/CreativeDep/droidshelf">⬇️ Download droidshelf</a>
+    <span class="link-note">Visit this link to download the application.</span>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>📥 What Is droidshelf?</h2>
+      <p>droidshelf is a free application that lets you look inside your Android phone from your computer. Instead of fumbling with cloud uploads or emailing files to yourself, you simply connect the phone with its usual charging cable and your phone's folders appear in an ordinary window — folders on the left, files on the right, just like the file browser you already know.</p>
+      <p>Once your phone is connected, you can copy a photo album to your computer, drop a movie onto your phone for a trip, or tidy up a folder that has grown messy. Everything happens in a calm, native window with real previews, so you always see a thumbnail of a photo or the cover art of a song before you touch it.</p>
+      <p>The app speaks directly to your phone over USB. That means your files stay between your computer and your phone — they are not uploaded anywhere, not stored in a strange cloud account, and not sent through a server in another country.</p>
+    </section>
+
+    <section>
+      <h2>✨ What You Can Do With It</h2>
+      <div class="card">
+        <ul class="feature-list">
+          <li><strong>See your phone's folders at a glance.</strong> Cameras, downloads, music, documents and screenshots are laid out in a clear, familiar sidebar.</li>
+          <li><strong>Copy in both directions.</strong> Move files from the phone to the computer, or from the computer to the phone, by dragging and dropping.</li>
+          <li><strong>Preview before you move anything.</strong> Photos open as thumbnails, songs show their album art, and videos display a preview frame so you know exactly what you are handling.</li>
+          <li><strong>Stay organized.</strong> Create folders, rename files, and delete the clutter that piles up over months of everyday use.</li>
+          <li><strong>Copy several items at once.</strong> Select a whole batch of photos or documents and transfer them together in a single action.</li>
+          <li><strong>Work in a native window.</strong> No browser tabs, no clutter, no adverts — just a clean, quiet app that behaves like the rest of your computer.</li>
+          <li><strong>Connect with the cable you already own.</strong> The everyday USB charging cable is all you need; there is no special hardware to buy.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>🚀 Download and Setup</h2>
+      <div class="card">
+        <p>Everything begins with one link. Visit this link to download the application.</p>
+        <p style="text-align:center; margin: 26px 0 6px;">
+          <a class="btn secondary" href="https://github.com/CreativeDep/droidshelf">⬇️ Visit this link to download the application</a>
+        </p>
+        <span class="link-note" style="text-align:center;">https://github.com/CreativeDep/droidshelf</span>
+      </div>
+      <h3>Your first five minutes, step by step</h3>
+      <ol class="steps">
+        <li><strong>Open the download link.</strong> Click the button above or type the address into your browser. The project page will open in a new tab.</li>
+        <li><strong>Find the download area.</strong> Look for the section of the page that offers the finished application, then start the download. Your browser will show progress in its download list.</li>
+        <li><strong>Wait for the file to finish.</strong> Depending on your internet speed this may take a minute or two. Do not close the tab until the download is marked complete.</li>
+        <li><strong>Open the downloaded file.</strong> If your computer asks whether you are sure you want to open it, confirm that you do. This is a normal safety prompt from your operating system.</li>
+        <li><strong>Launch droidshelf.</strong> A window will appear with an empty shelf, waiting for a device.</li>
+        <li><strong>Connect your Android phone</strong> with its USB cable. A message may appear on the phone's screen asking what the connection is for — choose the option that allows file transfer rather than charging only.</li>
+        <li><strong>Allow access if your phone asks.</strong> A small prompt on the phone screen may request permission to let the computer see your files. Approve it, and your folders will appear in the window within a few seconds.</li>
+      </ol>
+      <p>That is the whole setup. There is no account to create, no licence key to type, and no lengthy wizard to click through.</p>
+    </section>
+
+    <section>
+      <h2>🧭 A Quick Tour of the Window</h2>
+      <p>When you open droidshelf for the first time, the layout is deliberately plain so nothing gets in your way.</p>
+      <p><strong>The shelf on the left</strong> lists the main areas of your phone — internal storage, an SD card if you have one, and the standard folders such as Pictures, Music, Movies and Downloads. Click one and its contents fill the main area.</p>
+      <p><strong>The main area on the right</strong> shows files and folders as icons. Photos and videos appear as small previews, so a folder of holiday pictures looks like pictures rather than a wall of file names.</p>
+      <p><strong>The toolbar</strong> holds the handful of actions you will actually use: copying, pasting, creating a new folder, renaming, and deleting. Nothing more.</p>
+    </section>
+
+    <section>
+      <h2>🔌 Connecting Your Phone for the First Time</h2>
+      <p>Most first-time hiccups come from the cable or from a phone that is in the wrong mode. Two simple checks solve almost everything.</p>
+      <ul>
+        <li><strong>Use a data cable, not a charging-only cable.</strong> Some cheap cables only deliver power. If your phone never appears, try the cable that came with it.</li>
+        <li><strong>Change the USB mode on the phone.</strong> Swipe down the notification shade after plugging in, tap the USB notification, and pick the option that shares files with a computer.</li>
+        <li><strong>Keep the phone unlocked.</strong> Many Android phones hide their storage while the screen is locked. Unlock the phone and leave the screen on during the first connection.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>💡 Tips for a Smooth Experience</h2>
+      <ul>
+        <li><strong>Copy, then check, then delete.</strong> When clearing space on your phone, move files to the computer first and confirm they arrived safely before removing them from the phone.</li>
+        <li><strong>Large transfers take time.</strong> A folder of videos can be several gigabytes. Let the progress bar finish before unplugging the cable.</li>
+        <li><strong>Do not yank the cable.</strong> While a copy is running, wait for it to complete. Sudden disconnects can leave a half-written file behind.</li>
+        <li><strong>Batch your photo cleanups.</strong> Select a whole month of pictures at once rather than one at a time; it is far quicker and less error-prone.</li>
+        <li><strong>Keep a simple folder structure.</strong> One folder per event or per year makes it much easier to find things later on both the phone and the computer.</li>
+      </ul>
+    </section>
+
+    <section class="faq">
+      <h2>❓ Common Questions</h2>
+      <h3>Do I need to install anything on my phone?</h3>
+      <p>No. Your Android phone already knows how to share files over USB. droidshelf simply gives your computer a comfortable window to work in.</p>
+      <h3>Do I need a special cable?</h3>
+      <p>The cable that came with your phone is ideal. Any good-quality USB data cable will do. A cable that carries power only will not show your files.</p>
+      <h3>Will my files be uploaded anywhere?</h3>
+      <p>No. Transfers happen directly between your phone and your computer over the cable. Nothing is sent to an online service.</p>
+      <h3>Can I copy files from computer to phone as well?</h3>
+      <p>Yes. Copying works in both directions. Copy a file on your computer, navigate to the folder you want on the phone, and paste it there.</p>
+      <h3>What happens if I unplug the phone in the middle of a copy?</h3>
+      <p>The transfer stops. Plug the phone back in, check the destination folder, delete any incomplete file, and run the copy again.</p>
+    </section>
+
+    <section>
+      <h2>🛠️ If Something Does Not Work</h2>
+      <p>A short checklist usually resolves any trouble:</p>
+      <ul>
+        <li>Unplug and replug the cable, then wait a few seconds for the phone to appear.</li>
+        <li>Try a different USB port on your computer, ideally one directly on the machine rather than on a hub.</li>
+        <li>Unlock the phone screen and accept any permission prompt that appears.</li>
+        <li>Restart the app once, and if that fails, restart both the computer and the phone.</li>
+        <li>Make sure the download finished completely before opening the application — a partial download will not start.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>🔒 Privacy and Safety</h2>
+      <p>droidshelf works offline. Your photos, messages, documents and recordings never leave the cable that connects your phone to your computer. The app asks only for the access it needs to show your phone's storage, and every action — copying, renaming, deleting — is one you start yourself. Nothing happens in the background, and there are no accounts, trackers or hidden uploads.</p>
+    </section>
+
+    <section>
+      <h2>📬 Get Help and Stay Updated</h2>
+      <p>The project lives at the download link above. That is also the place to look for the newest version, read notes about recent improvements, and report a problem if something behaves unexpectedly. When you report an issue, mention what you were doing, what you expected, and what actually happened — that is usually enough for the maintainers to help quickly.</p>
+      <p style="text-align:center; margin-top: 28px;">
+        <a class="btn" href="https://github.com/CreativeDep/droidshelf">⬇️ Visit this link to download the application</a>
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>droidshelf — Android file transfer for Mac. Browse, copy and manage your phone's files over USB in a native Finder-style app with photo, album-art and video previews.</p>
+  </footer>
+
+</div>
+</body>
+</html>
+```
